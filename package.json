@@ -4,7 +4,9 @@
   "description": "Sort module-deps/dgraph output topologically",
   "main": "index.js",
   "dependencies": {
-    "through": "~2.3.4"
+    "through": "~2.3.4",
+    "JSONStream": "~0.7.1",
+    "minimist": "0.0.5"
   },
   "devDependencies": {
     "semver": "~2.2.1",
