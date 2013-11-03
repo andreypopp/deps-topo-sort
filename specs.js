@@ -32,4 +32,25 @@ describe('deps-topo-sort', function() {
       done();
     });
   });
+
+  it('handles circular deps', function(done) {
+    var g = asStream(
+      {
+        id: 'main.css',
+        deps: {'z.css': 'z.css'}
+      },
+      {
+        id: 'z.css',
+        deps: {'main.css': 'main.css'}
+      }
+    );
+
+    aggregate(g.pipe(sort()), function(err, result) {
+      if (err) return done(err);
+      assert.deepEqual(
+        result.map(function(mod) { return mod.id; }),
+        ["z.css", "main.css"]);
+      done();
+    });
+  });
 });
