@@ -12,7 +12,8 @@
     "semver": "~2.2.1",
     "mocha": "~1.14.0",
     "as-stream": "~0.1.1",
-    "stream-aggregate": "~0.1.1"
+    "stream-aggregate": "~0.1.1",
+    "jshint": "~2.3.0"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha"

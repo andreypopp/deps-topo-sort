@@ -10,7 +10,7 @@ test:
 	@$(BIN)/mocha -b -R spec ./specs.js
 
 lint:
-	@$(BIN)/jshint *.js
+	@$(BIN)/jshint index.js
 
 release-patch: test
 	@$(call release,patch)
