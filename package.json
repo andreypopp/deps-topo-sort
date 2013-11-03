@@ -1,6 +1,6 @@
 {
   "name": "deps-topo-sort",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Sort module-deps/dgraph output topologically",
   "main": "index.js",
   "dependencies": {
