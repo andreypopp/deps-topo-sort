@@ -28,7 +28,7 @@ module.exports = function() {
         if (seen[mod.id]) return;
         seen[mod.id] = true;
         if (hasDeps(mod)) {
-          var deps = values(mod.deps).map(resolve);
+          var deps = values(mod.deps).map(resolve).filter(Boolean);
           deps.sort(cmp);
           deps.forEach(visit);
         }

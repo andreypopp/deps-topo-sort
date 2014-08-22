@@ -16,11 +16,11 @@
     "jshint": "~2.3.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha specs.js"
   },
   "repository": {
     "type": "git",
-    "url": "andreypopp/deps-topo-sort"
+    "url": "https://github.com/andreypopp/deps-topo-sort"
   },
   "keywords": [
     "dependency",
