@@ -19,10 +19,7 @@ module.exports = function() {
       if (isEmpty) return this.queue(null);
 
       var queue = this.queue.bind(this),
-          topLevel = values(index),
           seen = {};
-
-      topLevel.sort(cmp);
 
       function visit(mod) {
         if (seen[mod.id]) return;
