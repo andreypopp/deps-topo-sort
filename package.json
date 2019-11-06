@@ -9,7 +9,7 @@
     "minimist": "0.0.5"
   },
   "devDependencies": {
-    "semver": "~2.2.1",
+    "semver": "~6.3.0",
     "mocha": "~1.14.0",
     "as-stream": "~0.1.1",
     "stream-aggregate": "~0.1.1",
